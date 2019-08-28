@@ -74,8 +74,25 @@ gulp.task("js-vendors", function() {
     .pipe(gulp.dest(ASSETS_FOLDER_PATH));
 });
 
+gulp.task("images", function() {
+  return gulp
+    .src("images/*.{jpg,jpeg,png,gif,svg}")
+    .pipe(changed(ASSETS_FOLDER_PATH))
+    .pipe(gulp.dest(ASSETS_FOLDER_PATH));
+});
+
+gulp.task("fonts", function() {
+  return gulp
+    .src("fonts/*.{eot,svg,ttf,woff,woff2}")
+    .pipe(changed(ASSETS_FOLDER_PATH))
+    .pipe(gulp.dest(ASSETS_FOLDER_PATH));
+});
+
+
 gulp.task("watch", function() {
   gulp.watch("sass/**/*.{scss,liquid}", gulp.series("sass"));
   gulp.watch("js/*.js", gulp.series("js"));
   gulp.watch("js/vendors/*.js", gulp.series("js-vendors"));
+  gulp.watch("images/*.{jpg,jpeg,png,gif,svg}", gulp.series("images"));
+  gulp.watch("fonts/*.{eot,svg,ttf,woff,woff2}", gulp.series("fonts"));
 });
