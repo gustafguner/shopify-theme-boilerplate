@@ -1,5 +1,7 @@
 "use strict";
 
+const ASSETS_FOLDER_PATH = "../assets/";
+
 const gulp = require("gulp");
 const sass = require("gulp-sass");
 const autoprefixer = require("gulp-autoprefixer");
@@ -11,8 +13,6 @@ const changed = require("gulp-changed");
 const t2 = require("through2");
 
 sass.compiler = require("node-sass");
-
-const ASSETS_FOLDER_PATH = "../assets/";
 
 gulp.task("sass", function() {
   return gulp

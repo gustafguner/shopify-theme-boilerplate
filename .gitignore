@@ -1,5 +1,4 @@
 .DS_Store
 .env
 .env.*
-config.yml
 node_modules
