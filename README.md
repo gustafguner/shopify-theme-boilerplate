@@ -21,6 +21,7 @@ Setting up this boilerplate theme consists of two phases.
 1. Create a file named `config.yml` in the root, with the content of the already existing file `config.example.yml`
 2. Replace the dummy-credentials with your actual ones
 3. `cd` into the `dev-assets` folder and install the dependencies by running 
+ 
    ```sh
    npm install
    ```
@@ -30,10 +31,12 @@ Using the boilerplate theme is very smooth.
 
 1. Open two terminal windows/tabs
 2. In the first one, `cd` into the root of the theme and run 
+  
    ```sh
    theme watch
    ```
 3. In the second one, `cd` into the `dev-assets` folder and run 
+
    ```sh
    gulp watch
    ```
