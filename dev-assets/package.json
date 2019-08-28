@@ -1,0 +1,30 @@
+{
+  "name": "shopify-theme-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gustaf Gunér",
+  "license": "MIT",
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "ie 10"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-changed": "^4.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "node-sass": "^4.12.0",
+    "through2": "^3.0.1"
+  }
+}
